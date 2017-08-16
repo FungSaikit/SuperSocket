@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04817AB41D9FC505007FBF55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04817AB31D9FC505007FBF55 /* main.m */; };
+		0417738F1E5C0AA6006414D9 /* Consumption.m in Sources */ = {isa = PBXBuildFile; fileRef = 0417738E1E5C0AA6006414D9 /* Consumption.m */; };
+		041773961E5C12FC006414D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041773951E5C12FC006414D9 /* main.m */; };
 		04817AB71D9FC505007FBF55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04817AB61D9FC505007FBF55 /* AppDelegate.m */; };
-		04817ABA1D9FC505007FBF55 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04817AB91D9FC505007FBF55 /* FirstViewController.m */; };
-		04817ABD1D9FC505007FBF55 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04817ABC1D9FC505007FBF55 /* SecondViewController.m */; };
 		04817AC01D9FC505007FBF55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04817ABE1D9FC505007FBF55 /* Main.storyboard */; };
 		04817AC21D9FC505007FBF55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04817AC11D9FC505007FBF55 /* Assets.xcassets */; };
 		04817AC51D9FC505007FBF55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04817AC31D9FC505007FBF55 /* LaunchScreen.storyboard */; };
 		04817AD01D9FC505007FBF55 /* SuperSocketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04817ACF1D9FC505007FBF55 /* SuperSocketTests.m */; };
 		04817ADB1D9FC505007FBF55 /* SuperSocketUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04817ADA1D9FC505007FBF55 /* SuperSocketUITests.m */; };
+		04B517081DA2A148001D08A0 /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B517071DA2A148001D08A0 /* Setting.m */; };
+		04B5170B1DA2AB2F001D08A0 /* Control.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B5170A1DA2AB2F001D08A0 /* Control.m */; };
+		04B5170E1DA2AC34001D08A0 /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B5170D1DA2AC34001D08A0 /* Timer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,15 +37,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		040C6DF91E89396C005F18EA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0417738D1E5C0AA6006414D9 /* Consumption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Consumption.h; sourceTree = "<group>"; };
+		0417738E1E5C0AA6006414D9 /* Consumption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Consumption.m; sourceTree = "<group>"; };
+		041773951E5C12FC006414D9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04817AAF1D9FC505007FBF55 /* SuperSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		04817AB31D9FC505007FBF55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04817AB51D9FC505007FBF55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04817AB61D9FC505007FBF55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		04817AB81D9FC505007FBF55 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		04817AB91D9FC505007FBF55 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		04817ABB1D9FC505007FBF55 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		04817ABC1D9FC505007FBF55 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		04817ABF1D9FC505007FBF55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04817AC11D9FC505007FBF55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04817AC41D9FC505007FBF55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +67,12 @@
 		04817AD61D9FC505007FBF55 /* SuperSocketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperSocketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04817ADA1D9FC505007FBF55 /* SuperSocketUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperSocketUITests.m; sourceTree = "<group>"; };
 		04817ADC1D9FC505007FBF55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B517061DA2A148001D08A0 /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
+		04B517071DA2A148001D08A0 /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setting.m; sourceTree = "<group>"; };
+		04B517091DA2AB2F001D08A0 /* Control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Control.h; sourceTree = "<group>"; };
+		04B5170A1DA2AB2F001D08A0 /* Control.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Control.m; sourceTree = "<group>"; };
+		04B5170C1DA2AC34001D08A0 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		04B5170D1DA2AC34001D08A0 /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,13 +125,9 @@
 			children = (
 				04817AB51D9FC505007FBF55 /* AppDelegate.h */,
 				04817AB61D9FC505007FBF55 /* AppDelegate.m */,
-				04817AB81D9FC505007FBF55 /* FirstViewController.h */,
-				04817AB91D9FC505007FBF55 /* FirstViewController.m */,
-				04817ABB1D9FC505007FBF55 /* SecondViewController.h */,
-				04817ABC1D9FC505007FBF55 /* SecondViewController.m */,
 				04817ABE1D9FC505007FBF55 /* Main.storyboard */,
-				04817AC11D9FC505007FBF55 /* Assets.xcassets */,
 				04817AC31D9FC505007FBF55 /* LaunchScreen.storyboard */,
+				04817AC11D9FC505007FBF55 /* Assets.xcassets */,
 				04817AC61D9FC505007FBF55 /* Info.plist */,
 				04817AB21D9FC505007FBF55 /* Supporting Files */,
 			);
@@ -122,7 +137,15 @@
 		04817AB21D9FC505007FBF55 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				04817AB31D9FC505007FBF55 /* main.m */,
+				041773951E5C12FC006414D9 /* main.m */,
+				04B517091DA2AB2F001D08A0 /* Control.h */,
+				04B5170A1DA2AB2F001D08A0 /* Control.m */,
+				04B5170C1DA2AC34001D08A0 /* Timer.h */,
+				04B5170D1DA2AC34001D08A0 /* Timer.m */,
+				0417738D1E5C0AA6006414D9 /* Consumption.h */,
+				0417738E1E5C0AA6006414D9 /* Consumption.m */,
+				04B517061DA2A148001D08A0 /* Setting.h */,
+				04B517071DA2A148001D08A0 /* Setting.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -155,6 +178,7 @@
 				04817AAB1D9FC505007FBF55 /* Sources */,
 				04817AAC1D9FC505007FBF55 /* Frameworks */,
 				04817AAD1D9FC505007FBF55 /* Resources */,
+				040C6DF91E89396C005F18EA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,7 +231,10 @@
 		04817AA71D9FC505007FBF55 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				KnownAssetTags = (
+					"设置选项",
+				);
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = fungjack;
 				TargetAttributes = {
 					04817AAE1D9FC505007FBF55 = {
@@ -281,10 +308,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04817ABD1D9FC505007FBF55 /* SecondViewController.m in Sources */,
+				04B5170E1DA2AC34001D08A0 /* Timer.m in Sources */,
 				04817AB71D9FC505007FBF55 /* AppDelegate.m in Sources */,
-				04817ABA1D9FC505007FBF55 /* FirstViewController.m in Sources */,
-				04817AB41D9FC505007FBF55 /* main.m in Sources */,
+				0417738F1E5C0AA6006414D9 /* Consumption.m in Sources */,
+				04B5170B1DA2AB2F001D08A0 /* Control.m in Sources */,
+				041773961E5C12FC006414D9 /* main.m in Sources */,
+				04B517081DA2A148001D08A0 /* Setting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +386,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -379,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -405,6 +435,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -421,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -434,8 +465,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BYJH7H8925;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/StaticLibrary",
+				);
 				INFOPLIST_FILE = SuperSocket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib-ios",
+					"$(PROJECT_DIR)/StaticLibrary",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = jackfung.com.SuperSocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -446,8 +487,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BYJH7H8925;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/StaticLibrary",
+				);
 				INFOPLIST_FILE = SuperSocket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib-ios",
+					"$(PROJECT_DIR)/StaticLibrary",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = jackfung.com.SuperSocket;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -522,6 +573,7 @@
 				04817AE11D9FC505007FBF55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04817AE21D9FC505007FBF55 /* Build configuration list for PBXNativeTarget "SuperSocketTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +582,7 @@
 				04817AE41D9FC505007FBF55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04817AE51D9FC505007FBF55 /* Build configuration list for PBXNativeTarget "SuperSocketUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +591,7 @@
 				04817AE71D9FC505007FBF55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
