@@ -162,6 +162,7 @@
 #pragma mark - 添加计划的方法
 
 - (IBAction)clickToAddPlan:(id)sender {
+    if([self doUserLogin]){
     //先将week数组清零
     selectWeekArray = [NSMutableArray arrayWithObjects:@0, @0, @0, @0, @0, @0, @0, nil];
     _setStatus = [[NSNumber alloc] initWithInt:0];
@@ -217,6 +218,12 @@
     [selectTimeAlert addAction:cancelButton];
     
     [self presentViewController:selectTimeAlert animated:YES completion:nil];
+    }else{
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *okButton = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:nil];
+        [alert addAction:okButton];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
 }
 
 - (void)setStatus:(id)sender{//设置文字显示
@@ -305,6 +312,24 @@
 }
 
 #pragma mark - 文件处理方法
+
+- (BOOL)doUserLogin{
+    NSArray *pathArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *path = [pathArray firstObject];
+    NSString *filePath = [path stringByAppendingString:@"/userPlist.plist"];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+        //如果文件存在
+        NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithContentsOfFile:filePath];//读取文件
+        if ([dict objectForKey:@"userName"]) {
+            return YES;
+        }
+        else{//如果objectForKey没有东西
+            return NO;
+        }
+    }else{//如果文件不存在
+        return NO;
+    }
+}
 
 - (void)saveToFile{
     NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];

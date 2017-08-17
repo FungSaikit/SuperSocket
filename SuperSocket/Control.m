@@ -44,6 +44,24 @@
     [_ControlArray writeToFile:filePath atomically:YES];
 }
 
+- (BOOL)doUserLogin{
+        NSArray *pathArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *path = [pathArray firstObject];
+        NSString *filePath = [path stringByAppendingString:@"/userPlist.plist"];
+        if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+            //如果文件存在
+            NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithContentsOfFile:filePath];//读取文件
+            if ([dict objectForKey:@"userName"]) {
+                return YES;
+            }
+            else{//如果objectForKey没有东西
+                return NO;
+            }
+        }else{//如果文件不存在
+            return NO;
+        }
+}
+
 #pragma mark - 点击事件
 
 - (IBAction)clickToAddSocketAlert:(id)sender {
@@ -216,7 +234,7 @@
 #pragma mark - 网络请求
 
 - (void)startConnectWithSocketNumber: (NSString *)socketNumber andStatus: (NSString *)status{
-    
+    if([self doUserLogin]){
     NSString *urlString = [NSString stringWithFormat:@"http://47.93.57.54:8080/ssm_school_project/user/postSocketId"];
     NSURL *url = [NSURL URLWithString:urlString];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
@@ -237,7 +255,12 @@
         }
     }];
     [dataTask resume];
-    
+    }else{
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"请先登录" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *okButton = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:nil];
+        [alert addAction:okButton];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
 }
 
 #pragma mark - 登陆相关
